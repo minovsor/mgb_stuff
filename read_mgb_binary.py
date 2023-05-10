@@ -14,3 +14,24 @@ def read_mgb_binary_as_dataframe(filebin, nt, nc, dstart):
     df = pd.DataFrame(dados, columns=range(1,nc+1), index=times)
     
     return df
+
+
+
+from datetime import datetime,timedelta
+import calendar
+# function to make datetime indexes skipping 29-fev inleap years
+def times_365(dstart,nt):
+
+    #dstart = datetime(2015,1,1)
+    #nt = 23725
+    times = [dstart]
+    for i in range(nt):
+        d = d + timedelta(days=1)
+        
+        if (calendar.isleap(d.year) and d.day ==29 and d.month==2):
+            continue # will skip the date
+        
+        # else..store data
+        times.append(d)
+    
+    return times
