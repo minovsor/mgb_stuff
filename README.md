@@ -2,4 +2,4 @@
 
 *possivelmente relacionado ao MGB*
 
-*sua conta em risco :p**
+*sem garantias, mas no geral, funciona*
