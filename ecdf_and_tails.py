@@ -1,7 +1,7 @@
 # MONTA TABELA DA CDF
 @author: MINO SORRIBAS
 import numpy as np
-from scipy import interpolate
+from scipy import interpolate,stats
 def table_ecdf(x, method='default',ascending=True, simplify=100):
     
     # x: values, y:quantiles
