@@ -7,6 +7,12 @@ import numpy as np
 import pandas as pd
 from datetime import datetime,timedelta
 
+def read_bin_memmap(filebin, nt, nc):
+    #a = np.memmap(filebin,dtype='<f4',mode='r',shape=((nt,nc)),order='C') ##[:,0]
+    # ou 
+    a = np.memmap(filebin,dtype='<f4',mode='r',shape=((nc,nt)),order='F') ##[0,:]
+    return a
+
 def dump_mgb_binary_to_npy(filebin, fileout, nt, nc):
     """ Read binary file (MGB format) and dump content to .npy """
 
