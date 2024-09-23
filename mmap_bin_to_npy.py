@@ -7,6 +7,17 @@ import numpy as np
 import pandas as pd
 from datetime import datetime,timedelta
 
+def read_mgb_binary_as_dataframe_memmap(filebin, nt, nc, dstart, idx_c):
+    #TODO: testar
+    # idx_c numerado de 1 a n
+    # mas precisamos acessar de 0 a n-1
+    ixc_ = [int(i-1) for i in idx_c]    
+    dados = np.memmap(filebin,dtype='<f4',mode='r',
+                      shape=((nc,nt)),order='F')[ixc_,:]        
+    times = [dstart + timedelta(days=i) for i in range(nt)]
+    return pd.DataFrame(dados, columns = idx_c, index=times)
+    
+
 def read_bin_memmap(filebin, nt, nc):
     #a = np.memmap(filebin,dtype='<f4',mode='r',shape=((nt,nc)),order='C') ##[:,0]
     # ou 
