@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
-
-Este é um arquivo de script temporário.
+creo que arte do Siqueira
 
 #bibliotecas adicionais
 conda install -c conda-forge pandas
