@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 
-Reads XS from geometry files of HEC-RAS
+Reads XS from simple geometry files of HEC-RAS
 
 Dec/2020
 
