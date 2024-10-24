@@ -1,3 +1,5 @@
+## Sly's utm2deg function, might be useful someday
+
 function [lat, lon] = utm2deg(Easting, Northing, ZoneNumber, Hemisphere)
     % utm2deg converts UTM coordinates to latitude and longitude
     % Easting: UTM Easting coordinate
