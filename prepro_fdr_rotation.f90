@@ -24,7 +24,7 @@
 	! 16        1
 	!  8   4    2    
     
-    !padr„o whitebox 
+    !padr√£o whitebox 
     ! 64 128   1
     ! 32   0   2
     ! 16   8   4
