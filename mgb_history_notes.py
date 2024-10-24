@@ -1,3 +1,4 @@
+'''
 ATUALIZACOES DO MGB
 
 MGB 1.0 
@@ -70,5 +71,7 @@ MGB 4.5 (02/11/2020)
 
 MGB 4.6 (08/08/2021)
 - Novo visualizador de resultados de balanço hídrico, chamado “MGB Water Balance”.
+'''
+
 
 
